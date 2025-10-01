@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Match Génie en Herbe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <img src="logo-cts2.png" alt="Logo" class="logo">
+
+    <h1>Score du Génie en Herbe</h1>
+
+    <div class="scores">
+      <div class="team" id="teamA">
+        <h2>Licence 2 SRT</h2>
+        <span id="scoreA">0</span>
+        <div class="buttons">
+          <button class="add" onclick="openPopup('A','plus')">+</button>
+          <button class="subtract" onclick="openPopup('A','minus')">-</button>
+        </div>
+      </div>
+
+      <div class="team" id="teamB">
+        <h2>Licence 1 D2A</h2>
+        <span id="scoreB">0</span>
+        <div class="buttons">
+          <button class="add" onclick="openPopup('B','plus')">+</button>
+          <button class="subtract" onclick="openPopup('B','minus')">-</button>
+        </div>
+      </div>
+    </div>
+    <button class="reset" onclick="resetScores()">Réinitialiser</button>
+  </div>
+</br>
+  <div class="basdepage"><p>
+            @Copyrigth:
+    <strong>Cyber Tech Squad</strong>
+</p>
+  </div>
+
+  <!-- Popup -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <h3 id="popupTitle">Ajouter des points</h3>
+      <input type="number" id="pointsInput" placeholder="Entrez un nombre" min="1">
+      <div class="popup-buttons">
+        <button onclick="applyPoints()">OK</button>
+        <button onclick="closePopup()">Annuler</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

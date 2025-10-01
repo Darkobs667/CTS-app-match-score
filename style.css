@@ -1,0 +1,147 @@
+body {
+  font-family: Arial, sans-serif;
+  background: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 30px;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 15px;
+}
+
+h1 {
+  color: #006666;
+  margin-bottom: 30px;
+}
+
+.scores {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+
+.team {
+  background: #f1f1f1;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.team h2 {
+  margin: 0 0 15px;
+  color: #004c4c;
+}
+
+.team span {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.buttons button {
+  font-size: 20px;
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  background: #009999;
+  color: white;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background:#004d40;
+}
+.reset {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background: #1c8a91;
+  color: white;
+  cursor: pointer;
+}
+
+.reset:hover {
+  background: #146967;
+}
+
+/* Popup styles */
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  width: 300px;
+  margin: 15% auto;
+}
+
+.popup-content input {
+  width: 80%;
+  padding: 8px;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.popup-buttons button {
+  padding: 8px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  background: #006666;
+  color: white;
+  cursor: pointer;
+}
+
+.popup-buttons button:hover {
+  background: #004c4c;
+}
+.basdepage{
+    color:#004c4c;
+}
+#teamA h2 {
+  color: #006064;
+}
+
+#teamB h2 {
+  color: black;
+}
+
+#teamA .add, #teamA .subtract {
+  background-color: #a7f3d0;
+  border: none;
+  padding: 15px 25px;
+  font-size: 24px;
+  border-radius: 10px;
+  color: #004d40;
+  cursor: pointer;
+}
+
+#teamB .add, #teamB .subtract {
+  background-color: rgb(68, 65, 65);
+  border: none;
+  padding: 15px 25px;
+  font-size: 24px;
+  border-radius: 10px;
+  color:white;
+  cursor: pointer;
+}
+
