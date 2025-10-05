@@ -144,4 +144,15 @@ h1 {
   color:white;
   cursor: pointer;
 }
+.vs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vs img{
+  width: 70px;
+  height: auto;
+  object-fit: contain;
+}
 
